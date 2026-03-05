@@ -11,7 +11,7 @@ public class Main {
     }
     void abc(){
        // System.out.println(test); local vars can only be called within the function
-        System.out.println(instVar);
+        System.out.println("abc: "+instVar);
     }
     public static void main(String[] args) {
         Main main=new Main();
@@ -24,5 +24,6 @@ public class Main {
 /*
 9
 10
-10
+abc: 10
+
 */
