@@ -1,0 +1,9 @@
+//comments in java
+public class Main {
+    public static void main(String[] args) {
+        //These is the single line comment
+        /* 
+        These is the multi-line comment in java
+         */
+    }
+}
