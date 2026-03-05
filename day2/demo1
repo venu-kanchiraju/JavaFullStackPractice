@@ -1,0 +1,22 @@
+public class Main {
+    //local
+    //instance
+    //class variable
+    int instVar=10;//instance variable
+    void disp(){
+        int test;//local variable
+        test=9;
+        System.out.println(test);
+        System.out.println(instVar);
+    }
+    void abc(){
+       // System.out.println(test); local vars can only be called within the function
+        System.out.println(instVar);
+    }
+    public static void main(String[] args) {
+        Main main=new Main();
+        main.disp();
+        main.abc();
+
+    }
+}
