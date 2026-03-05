@@ -1,0 +1,17 @@
+public class Main {
+    static void myFunction(){
+        System.out.println("Hello world! this my function");
+    }
+    void disp(){
+        System.out.println("disp method");
+    }
+    public static void main(String[] args) {
+        Main main=new Main();
+        myFunction();
+        main.disp();
+    }
+}
+/*
+Hello world! this my function
+disp method
+*/
