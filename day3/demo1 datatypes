@@ -1,0 +1,24 @@
+//Datatype
+
+//primitive type - simple values
+/* 8bits, 16bits , 32 bits , 64 bits
+* byte , short , int , long
+* float , double
+* char
+* boolean
+ */
+// class type : objects
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        //int age=110;
+
+        byte age=-128;
+        System.out.println(age);
+    }
+}
+/* 
+-128
+*/
