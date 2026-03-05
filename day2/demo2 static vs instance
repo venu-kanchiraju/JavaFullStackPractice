@@ -1,0 +1,30 @@
+public class Main {
+    //local
+    //instance
+    //class variable
+    int instVar=2;//instance variable
+    static int statVar=1;
+   void disp(){
+        int test=9;//local variable
+        System.out.println(test);
+        System.out.println(instVar);
+       System.out.println(statVar);
+    }
+   static void abc(){
+       //System.out.println("abc: "+instVar);
+        System.out.println(statVar);
+    }
+    public static void main(String[] args) {
+        Main main=new Main();
+        main.disp();
+        abc();
+        System.out.println("main "+statVar);
+    }
+}
+/*
+9
+2
+1
+1
+main 1
+*/
