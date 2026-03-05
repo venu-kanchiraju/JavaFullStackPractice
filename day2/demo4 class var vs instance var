@@ -1,0 +1,29 @@
+public class Main {
+    //local
+    //instance
+    //class variable - static variables
+    int inst=10;
+    static int stat=100;
+    public static void main(String[] args) {
+
+        System.out.println(stat);
+
+        Main main=new Main();
+        main.inst=500;
+        main.stat=700;
+        System.out.println("main instance var "+main.inst);
+        System.out.println("main "+main.stat);
+
+        Main main1=new Main();
+        System.out.println("main1 instance var "+main1.inst);
+        System.out.println("main1 "+main1.stat);
+    }
+}
+
+/*
+100
+main instance var 500
+main 700
+main1 instance var 10
+main1 700
+*/
