@@ -1,0 +1,23 @@
+//type casting :- the process of converting form one datatype to another datatype is called type casting
+ /*
+// two types :-   i) implicit --> low to high (byte,short,char,int,long,float,double)
+                 ii) explicit --> high to low (double,float,long,int,char,short,byte)
+*/
+public class Main {
+
+    public static void main(String[] args) {
+     char x='&';
+        System.out.println(x);
+
+     char y=65; //implicit cast from byte to char
+         System.out.println(y);
+
+         //char z='65';
+       // System.out.println(z);
+
+         }
+}
+/*
+&
+A
+*/
