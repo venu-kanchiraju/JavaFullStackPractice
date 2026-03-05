@@ -1,0 +1,28 @@
+public class Main {
+    //local
+    //instance
+    //class variable
+    int inst;
+    static int stat;
+    void test(){
+        System.out.println(stat);
+        System.out.println(inst);
+    }
+
+    public static void main(String[] args) {
+        System.out.println(stat);
+       // System.out.println(inst); error
+        Main main=new Main();
+        System.out.println(main.inst);
+        main=null;
+        //System.out.println(main.inst); null pointer -> memory is dealocated
+
+    }
+}
+
+/*
+
+0
+0
+
+*/
