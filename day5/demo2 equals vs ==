@@ -1,0 +1,33 @@
+package practice.com;
+
+public class Demo1 {
+
+    public static void main(String[] args) {
+    String a="java";
+    String b="java";
+    boolean result=a.equals(b);
+    System.out.println(result);//true
+
+    boolean result1=(a==b);
+    System.out.println(result1);//true
+
+    String a1=new String("java");//its have different address
+    String b1=new String("java");//its have different address
+    System.out.println(a1);//java
+    System.out.println(b1);//java
+
+    boolean result3= (a1==b1);
+    System.out.println(result3);//false because it check the reference which is address
+        //both have different address so we get the false.
+
+    boolean result4= a1.equals(b1);
+    System.out.println(result4);//true because it check the value and not a address
+    }
+}
+----------------------------------output-----------------------------------
+true
+true
+java
+java
+false
+true
