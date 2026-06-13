@@ -1,0 +1,32 @@
+package practice.com;
+
+public class Demo1 {
+
+    public static void main(String[] args) {
+  String str=new String("hello");
+  str.concat("world");
+  System.out.println(str);//hello
+
+  StringBuffer strB=new StringBuffer("hello");
+  strB.append("world");
+  System.out.println(strB);//hello world
+
+  StringBuilder strBld=new StringBuilder("hello");
+  strBld.append("world");
+  System.out.println(strBld);//helloworld
+
+        System.out.println(strBld.equals(strB));//false bcoz
+        //equals method is not overriden in string buffer class
+
+        String strr1=strB.toString();
+        String str2=strBld.toString();
+        System.out.println(strr1.equals(str2));//True
+        //equals method is overriden in string class
+   }
+}
+----------------------output-----------------------
+  hello
+helloworld
+helloworld
+false
+true
