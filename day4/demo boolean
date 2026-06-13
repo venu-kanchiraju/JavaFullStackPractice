@@ -1,0 +1,24 @@
+package practice.com;
+
+public class Demo1 {
+    static boolean z;
+    static boolean y;
+    public static void main(String[] args) {
+        System.out.println(y);
+        System.out.println(z);
+
+        String strNum="10";
+        System.out.println(strNum+" ");
+        //int num=(int)strNum; cannot be converted without a wrapper class
+        //coz string is class type and int is primitive type
+        int num=Integer.parseInt(strNum);
+        System.out.println(num);
+    }
+}
+---------------------------------output---------------------------
+  false
+false
+10 
+10
+
+Process finished with exit code 0
